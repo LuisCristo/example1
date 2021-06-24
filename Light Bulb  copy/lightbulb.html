@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>The Amazing Light Bulb</title>
+</head>
+
+<style>
+body	{background-color: black;}
+h1	{color: white;}
+p	{color: yellow;}
+</style>
+
+<body>
+	<h1>The Amazing Lightbulb</h1>
+
+
+	<p><img onclick="flipSwitch(this)" src="pic_bulboff.gif">
+	</p>
+
+
+	<p>click on the light bulb to turn on/off the light.</p>
+	<script>
+		var isOn = false
+		function flipSwitch(bulb) {
+			if(isOn) {
+				bulb.src = "pic_bulboff.gif"
+				isOn = false;
+			}
+			else {
+				bulb.src = "pic_bulbon.gif"
+				isOn = true;
+			}
+			console.log(isOn);
+		}
+	</script>
+</body>
+</html>
